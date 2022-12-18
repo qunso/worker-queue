@@ -15,4 +15,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           preCommands: npm install 
-          command: publish src/index.js
+          command: publish src/index.js --name ${{ secrets.CF_NAME }} --latest
