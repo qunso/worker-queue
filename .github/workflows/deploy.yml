@@ -10,9 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: checkout
-      # Runs commands using the runners shell
+      # Runs commands using the runners shell 
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          preCommands: npm install
+          preCommands: npm install 
           command: publish src/index.js
