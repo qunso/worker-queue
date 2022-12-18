@@ -9,11 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Publish
+      - name: checkout
       # Runs commands using the runners shell
-      - name: deps
-        run: npm install
+      - name: pub
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          command: publish src/index.js --name ${{ secrets.CF_NAME }} --latest
+          command: |
+          npm install
+          publish src/index.js --name ${{ secrets.CF_NAME }} --latest
