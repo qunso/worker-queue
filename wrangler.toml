@@ -1,4 +1,4 @@
-name = "worker-queue"
+#name = "worker-queue"
 type = "webpack"
 
 account_id = ""
@@ -7,4 +7,4 @@ route = ""
 zone_id = ""
 compatibility_date = "2021-10-26"
 
-vars = { TTL = 60000, PASSWORD = "t3st1ng" }
+#vars = { TTL = 60000, PASSWORD = "t3st1ng" }
