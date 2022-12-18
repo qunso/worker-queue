@@ -7,6 +7,7 @@ jobs:
   deploy:
     name: Deploy
     steps:
-      uses: cloudflare/wrangler-action@2.0.0
+      - push
+      - uses: cloudflare/wrangler-action@2.0.0
       with:
         apiToken: ${{ secrets.CF_API_TOKEN }}
